@@ -7,12 +7,14 @@ module.exports = {
 
 function repair(item) {
   let newObj = item;
-  newObj.durability = "100";
+  newObj.durability = 100;
   return { ...newObj };
 }
 
-function succeed() {
-  return { ...item };
+function succeed(item, val) {
+  let newObj = item;
+  item.size = val;
+  return { ...newObj };
 }
 
 function fail(item) {
