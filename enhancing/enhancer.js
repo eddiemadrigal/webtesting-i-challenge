@@ -5,8 +5,8 @@ module.exports = {
   get,
 };
 
-function succeed(item) {
-  return { ...item };
+function succeed() {
+  return true;
 }
 
 function fail(item) {
