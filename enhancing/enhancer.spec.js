@@ -7,7 +7,7 @@ describe('enhancer.js', () => {
   })
 
   it('should return an object', () => {
-    expect(repair({"durability": "1"})).toEqual({ "durability": "1" });
+    expect(repair({"durability": "1"})).toEqual({ "durability": "100" });
   })
 
 })

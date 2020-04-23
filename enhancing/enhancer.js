@@ -6,11 +6,13 @@ module.exports = {
 };
 
 function repair(item) {
-  return { ...item };
+  let newObj = item;
+  newObj.durability = "100";
+  return { ...newObj };
 }
 
 function succeed() {
-  return true;
+  return { ...item };
 }
 
 function fail(item) {
